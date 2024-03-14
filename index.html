@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet"></link>
+  <title>File Paths in Web Dev</title>
+</head>
+<body>
+  <main>
+    <ul>
+      <li>
+        <h2>Absolute</h2>
+        <h3>Local file system</h3>
+        <h4>/images/lily.webp</h4>
+        <figure>
+          <picture>
+            <source srcset="/images/lily.webp" type="image/webp">
+            <img src="/images/lily.jpg" alt="A white, 13-pound Maltipoo sits atop an oak whiskey barrel">
+          </picture>
+          <figcaption><span>./images/lily.webp</span>Relative path.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <h2>Absolute</h2>
+        <h3>URL</h3>
+        <h4>[replace with URL]</h4>
+        <figure>
+          <picture>
+            <source srcset="./images/lily.webp" type="image/webp">
+            <img src="./images/lily.jpg" alt="A white, 13-pound Maltipoo sits atop an oak whiskey barrel">
+          </picture>
+          <figcaption><span>./images/lily.webp</span>Relative path.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <h2>Relative</h2>
+        <h3>Local file system, from current directory</h3>
+        <h4>./images/lily.webp</h4>
+        <figure>
+          <picture>
+            <source srcset="./images/lily.webp" type="image/webp">
+            <img src="./images/lily.jpg" alt="A white, 13-pound Maltipoo sits atop an oak whiskey barrel">
+          </picture>
+          <figcaption><span>./images/lily.webp</span>Relative path.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <h2>Relative</h2>
+        <h3>Local file system, from current directory to one directory up</h3>
+        <h4>../images/lily.webp</h4>
+        <figure>
+          <picture>
+            <source srcset="./images/lily.webp" type="image/webp">
+            <img src="./images/lily.jpg" alt="A white, 13-pound Maltipoo sits atop an oak whiskey barrel">
+          </picture>
+          <figcaption><span>./images/lily.webp</span>Relative path.</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
